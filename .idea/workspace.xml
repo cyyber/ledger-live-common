@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d162ae3-dee1-46f3-a306-0d85cc06f667" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/families/qrl/hw-getAddress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/families/qrl/libcore-buildOperation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/families/qrl/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/.flowconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/public/gif.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/public/gif.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/public/gif.worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/public/gif.worker.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/public/ledger_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/Currencies/countervalues.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/Currencies/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/Partners/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/apps/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/bridgestream/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-direct/actions/markets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-direct/components/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-direct/components/CounterValuesAPIDemo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-direct/components/CurrencySelect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-direct/components/ExchangeSelect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-direct/components/Price.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-direct/components/PriceGraph.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-direct/components/ReversePrice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-direct/countervalues.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-direct/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-direct/reducers/markets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-direct/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-intermediary/actions/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-intermediary/components/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-intermediary/components/CounterValuesAPIDemo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-intermediary/components/CurrencySelect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-intermediary/components/ExchangeSelect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-intermediary/components/Price.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-intermediary/countervalues.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-intermediary/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-intermediary/reducers/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/countervalue-intermediary/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/derivations/CurrencySelect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/derivations/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/erc20/AccountField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/erc20/AddressField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/erc20/AmountField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/erc20/GasLimitField.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/erc20/SendButton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/erc20/TokenSelect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/erc20/countervalues.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/erc20/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/explorers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/logsviewer/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/qrledger/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/qrstreambenchmark/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/demos/transports/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/live-common-setup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/src/registerServiceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/node_modules/@ledgerhq/live-common/demo/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/demo/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/cryptocurrencies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cryptocurrencies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/hw-getAddress.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/hw-getAddress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/libcore-buildOperation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/libcore-buildOperation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generated/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hw/signTransaction/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hw/signTransaction/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/bridge/QrlJSBridge.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hw/signTransaction/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+              <folding>
+                <element signature="e#10#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/QRL.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1513">
+              <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+              <folding>
+                <element signature="e#9#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/cryptocurrencies.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1671" column="20" selection-start-line="1671" selection-start-column="20" selection-end-line="1671" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hw/signTransaction/ripple.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="8" selection-start-column="8" selection-end-column="8" />
+              <folding>
+                <element signature="e#9#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hw/signTransaction/qrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/families/qrl/hw-getAddress.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>bitcoinlikeaddress</find>
+      <find>ethereumlikeaddress</find>
+      <find>gettransactionnetworkinfo</find>
+      <find>getTransactionNetworkInfo</find>
+      <find>signandbroadcast`</find>
+      <find>editTransactionExtra</find>
+      <find>getTransactionRecipient</find>
+      <find>0x6</find>
+      <find>throttle</find>
+      <find>api.</find>
+      <find>.accountinfo</find>
+      <find>defaultEndpoint</find>
+      <find>^r[1-9</find>
+      <find>&quot;a0</find>
+      <find>par</find>
+      <find>&quot;a0&quot;</find>
+      <find>parseapi</find>
+      <find>unit.magnitude</find>
+      <find>parseAPICurrencyObject2</find>
+      <find>toOperationRaw</find>
+      <find>does not conform</find>
+      <find>transport</find>
+      <find>syncrhonize</find>
+      <find>signAndBroadcast</find>
+      <find>signTransaction</find>
+      <find>parseAPICurrencyObject</find>
+      <find>qrl</find>
+      <find>@ledgerhq/hw-app-qrl</find>
+      <find>publickey</find>
+      <find>ripple</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>CoreQrlLikeAddress</replace>
+      <replace>CoreQrlLikeTransaction</replace>
+      <replace>CoreQrlLikeOperation</replace>
+      <replace>CoreQrlLikeAccount</replace>
+      <replace>asQrlLikeOperation</replace>
+      <replace>asQrlLikeAccount</replace>
+      <replace>QrlLike</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/families/qrl/types.js" />
+        <option value="$PROJECT_DIR$/src/families/qrl/libcore-buildOperation.js" />
+        <option value="$PROJECT_DIR$/src/bridge/QrlJSBridge.js" />
+        <option value="$PROJECT_DIR$/src/api/QRL.js" />
+        <option value="$PROJECT_DIR$/src/derivation.js" />
+        <option value="$PROJECT_DIR$/src/hw/signTransaction/index.js" />
+        <option value="$PROJECT_DIR$/src/data/cryptocurrencies.js" />
+        <option value="$PROJECT_DIR$/lib/families/qrl/hw-getAddress.js" />
+        <option value="$PROJECT_DIR$/lib/hw/signTransaction/qrl.js.flow" />
+        <option value="$PROJECT_DIR$/src/hw/signTransaction/qrl.js" />
+        <option value="$PROJECT_DIR$/lib/families/qrl/hw-getAddress.js.flow" />
+        <option value="$PROJECT_DIR$/src/families/qrl/hw-getAddress.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/ledger-live-common.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="293" />
+    <option name="y" value="53" />
+    <option name="width" value="1380" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ledger-live-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ledger-live-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ledger-live-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ledger-live-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ledger-live-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ledger-live-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ledger-live-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ledger-live-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bridge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ledger-live-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ledger-live-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ledger-live-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ledger-live-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="families" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ledger-live-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ledger-live-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="families" type="462c0819:PsiDirectoryNode" />
+              <item name="bitcoin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ledger-live-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ledger-live-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="families" type="462c0819:PsiDirectoryNode" />
+              <item name="ethereum" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ledger-live-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ledger-live-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="families" type="462c0819:PsiDirectoryNode" />
+              <item name="qrl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ledger-live-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ledger-live-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="families" type="462c0819:PsiDirectoryNode" />
+              <item name="ripple" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ledger-live-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ledger-live-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ledger-live-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ledger-live-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hw" type="462c0819:PsiDirectoryNode" />
+              <item name="signTransaction" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ledgerjs" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/bridge" />
+      <recent name="$PROJECT_DIR$/src/families/qrl" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d162ae3-dee1-46f3-a306-0d85cc06f667" name="Default Changelist" comment="" />
+      <created>1559303977079</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559303977079</updated>
+      <workItem from="1559303978256" duration="9462000" />
+      <workItem from="1559373355148" duration="1323000" />
+      <workItem from="1559449543446" duration="606000" />
+      <workItem from="1559558347502" duration="19000" />
+      <workItem from="1559637843750" duration="10200000" />
+      <workItem from="1559719187504" duration="930000" />
+      <workItem from="1559720429600" duration="2827000" />
+      <workItem from="1559818598269" duration="620000" />
+      <workItem from="1559920628393" duration="65000" />
+      <workItem from="1559994767976" duration="3563000" />
+      <workItem from="1560066423579" duration="2862000" />
+      <workItem from="1560178726010" duration="4159000" />
+      <workItem from="1560239288862" duration="8565000" />
+      <workItem from="1560268486572" duration="3000" />
+      <workItem from="1560326944514" duration="2000000" />
+      <workItem from="1560414708587" duration="12778000" />
+      <workItem from="1560516774003" duration="4346000" />
+      <workItem from="1560582915121" duration="958000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="65286000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="27" width="1853" height="1053" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19071038" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293348" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3293348" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$USER_HOME$/z/js-api-bridge/src/helper.js.map" />
+        <option value="$USER_HOME$/z/js-api-bridge/src/helper.js" />
+      </list>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/generated/libcore-signAndBroadcast.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generated/libcore-getFeesForTransaction.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generated/libcore-buildTransaction.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/Ledger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/families/ethereum/buildERC20Operation.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/families/ethereum/libcore-buildOperation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/csvExport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-725" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/account.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="90" column="26" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/families/bitcoin/hw-getAddress.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/libcore/types/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6020">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/families/bitcoin/types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/families/ethereum/types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/families/ripple/types.js.flow">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/families/ripple/libcore-buildOperation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generated/libcore-buildTokenAccounts.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generated/types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+          <folding>
+            <element signature="e#9#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/socket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1530" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generated/libcore-buildOperation.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generated/hw-getAddress.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hw/getAddress/types.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hw/getAddress/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/libcore/buildAccount/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="72" column="10" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bridge/EthereumJSBridge.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="193" column="22" lean-forward="true" selection-start-line="193" selection-start-column="22" selection-end-line="193" selection-end-column="22" />
+          <folding>
+            <element signature="e#48#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/network.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/explorers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+          <folding>
+            <element signature="e#10#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/Ethereum.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/Ripple.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#9#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/families/qrl/types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/currencies/parseCurrencyUnit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/families/ripple/hw-getAddress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#10#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bridge/RippleJSBridge.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10047">
+          <caret line="628" column="25" selection-start-line="628" selection-start-column="2" selection-end-line="628" selection-end-column="25" />
+          <folding>
+            <element signature="e#49#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bridge/types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="81" column="25" selection-start-line="81" selection-start-column="2" selection-end-line="81" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/families/ripple/types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/families/ethereum/hw-getAddress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hw/signTransaction/ethereum.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/types/currencies.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/derivation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/families/qrl/libcore-buildOperation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/families/qrl/hw-getAddress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/hw/signTransaction/qrl.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2172" selection-start-column="2172" selection-end-column="2172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/hw/signTransaction/qrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/hw/signTransaction/qrl.js.flow">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/families/qrl/hw-getAddress.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="854" selection-start-column="854" selection-end-column="854" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/families/qrl/hw-getAddress.js.flow">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="e#10#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hw/signTransaction/ripple.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+          <folding>
+            <element signature="e#9#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hw/signTransaction/qrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/families/qrl/hw-getAddress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hw/signTransaction/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding>
+            <element signature="e#10#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/QRL.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1513">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding>
+            <element signature="e#9#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/cryptocurrencies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1671" column="20" selection-start-line="1671" selection-start-column="20" selection-end-line="1671" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bridge/QrlJSBridge.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -9,6 +9,11 @@ import type { CoreStatics as CoreStatics_ethereum } from "../families/ethereum/t
 import type { CoreAccountSpecifics as CoreAccountSpecifics_ethereum } from "../families/ethereum/types";
 import type { CoreOperationSpecifics as CoreOperationSpecifics_ethereum } from "../families/ethereum/types";
 import type { CoreCurrencySpecifics as CoreCurrencySpecifics_ethereum } from "../families/ethereum/types";
+import { reflect as qrlReflect } from "../families/qrl/types";
+import type { CoreStatics as CoreStatics_qrl } from "../families/qrl/types";
+import type { CoreAccountSpecifics as CoreAccountSpecifics_qrl } from "../families/qrl/types";
+import type { CoreOperationSpecifics as CoreOperationSpecifics_qrl } from "../families/qrl/types";
+import type { CoreCurrencySpecifics as CoreCurrencySpecifics_qrl } from "../families/qrl/types";
 import { reflect as rippleReflect } from "../families/ripple/types";
 import type { CoreStatics as CoreStatics_ripple } from "../families/ripple/types";
 import type { CoreAccountSpecifics as CoreAccountSpecifics_ripple } from "../families/ripple/types";
@@ -18,21 +23,26 @@ import type { CoreCurrencySpecifics as CoreCurrencySpecifics_ripple } from "../f
 export type SpecificStatics = {}
 & CoreStatics_bitcoin
 & CoreStatics_ethereum
+& CoreStatics_qrl
 & CoreStatics_ripple
 export type CoreAccountSpecifics = {}
 & CoreAccountSpecifics_bitcoin
 & CoreAccountSpecifics_ethereum
+& CoreAccountSpecifics_qrl
 & CoreAccountSpecifics_ripple
 export type CoreOperationSpecifics = {}
 & CoreOperationSpecifics_bitcoin
 & CoreOperationSpecifics_ethereum
+& CoreOperationSpecifics_qrl
 & CoreOperationSpecifics_ripple
 export type CoreCurrencySpecifics = {}
 & CoreCurrencySpecifics_bitcoin
 & CoreCurrencySpecifics_ethereum
+& CoreCurrencySpecifics_qrl
 & CoreCurrencySpecifics_ripple
 export const reflectSpecifics = (declare: *) => {
 bitcoinReflect(declare);
 ethereumReflect(declare);
+qrlReflect(declare);
 rippleReflect(declare);
 };

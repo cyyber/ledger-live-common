@@ -1669,7 +1669,7 @@ const cryptocurrenciesById: { [name: string]: CryptoCurrency } = {
       {
         name: "QRL",
         code: "QRL",
-        magnitude: 8
+        magnitude: 9
       }
     ],
     explorerViews: [
