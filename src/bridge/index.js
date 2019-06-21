@@ -6,6 +6,7 @@ import { decodeAccountId } from "../account";
 import { getEnv } from "../env";
 import * as RippleJSBridge from "./RippleJSBridge";
 import * as EthereumJSBridge from "./EthereumJSBridge";
+import * as QrlJSBridge from "./QrlJSBridge";
 import LibcoreCurrencyBridge from "./LibcoreCurrencyBridge";
 import LibcoreBitcoinAccountBridge from "./LibcoreBitcoinAccountBridge";
 import LibcoreEthereumAccountBridge from "./LibcoreEthereumAccountBridge";
@@ -29,6 +30,8 @@ export const getCurrencyBridge = (currency: CryptoCurrency): CurrencyBridge => {
       return EthereumJSBridge.currencyBridge;
     case "bitcoin":
       return LibcoreCurrencyBridge;
+    case "qrl":
+      return QrlJSBridge.currencyBridge;
     default:
       return mockCurrencyBridge; // fallback mock until we implement it all!
   }
@@ -48,6 +51,8 @@ export const getAccountBridge = (account: Account): AccountBridge<any> => {
       return RippleJSBridge.accountBridge;
     case "ethereum":
       return EthereumJSBridge.accountBridge;
+    case "qrl":
+      return QrlJSBridge.accountBridge;
     default:
       throw new CurrencyNotSupported("currency not supported", {
         currencyName: account.currency.name
