@@ -1,5 +1,6 @@
 // @flow
 import Qrl from "@theqrl/hw-app-qrl";
+import  validateQrlAddress  from '@theqrl/validate-qrl-address'
 import type Transport from "@ledgerhq/hw-transport";
 import type { CryptoCurrency } from "../../types";
 
@@ -26,6 +27,14 @@ export default async (
   const tx = txArg.transferTx;
   const sourceAddress = txData.sourceAddress;
   const qrl = new Qrl(transport);
+
+  const ledgerState = await qrl.get_state();
+  const maxOtsIndex = validateQrlAddress.hexString(sourceAddress).sig.number;
+  // Doesn't allow usage of last 5 ots index from ledger live
+  if (ledgerState.xmss_index > maxOtsIndex - 5) {
+    throw new Error("Last 5 ots indexes can only be used by QRL web wallet.")
+  }
+
   let publicKey = await qrl.publickey();
 
   const sourceAddr = Buffer.from(sourceAddress.substr(1), 'hex');

@@ -8,8 +8,17 @@ const resolver: Resolver = async (
   { path, verify, askChainCode }
 ) => {
   const qrl = new Qrl(transport);
-  const { address, publicKey, chainCode } = await qrl.getAddress();
-  return { path, address, publicKey, chainCode };
+  const r = await qrl.getAddress();
+  if (r.return_code && r.return_code !== "9000") {
+    return
+  }
+  if (verify) {
+      var result = await qrl.viewAddress();
+    if (result.return_code && result.return_code !== "9000") {
+      return
+    }
+  }
+  return { path, address: r.address, publicKey: r.publicKey, chainCode: r.chainCode };
 };
 
 export default resolver;

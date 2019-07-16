@@ -1720,7 +1720,7 @@ const cryptocurrenciesById: { [name: string]: CryptoCurrency } = {
     type: "CryptoCurrency",
     id: "qrl",
     coinType: 238,
-    name: "QRL",
+    name: "Quantum Resistant Ledger",
     ticker: "QRL",
     managerAppName: "QRL",
     scheme: "qrl",
